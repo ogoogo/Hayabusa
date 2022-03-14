@@ -11,7 +11,9 @@ header{
     display: flex;
     height: 90px;
     justify-content: space-between;
+    /* left: 0; */
     position: fixed;
+    /* top: 0; */
     width: 100vw;
     z-index: 1;
 }
@@ -103,10 +105,32 @@ h1{
 
 .uchiage{
     left: 189px;
+    top: 652px;
+}
+
+.itokawaTouchaku{
+    left: 898px;
+    top: 1247px;
+}
+
+.reactionWheelKoshou{
+    left: 206px;
+    top: 1843px;
+}
+
+.minerubaBunri{
+    left: 533px;
+    top: 2375px;
+}
+
+.koukaChallenge{
+    left: 815px;
+    top: 2860px;
 }
 
 .koukaSeikou{
     left: 189px;
+    top: 3597px;
 }
 
 .tsuushinTodaeru{
@@ -142,6 +166,31 @@ h1{
     position: absolute;
 }
 
+.rocket{
+    left: 720px;
+    top: 495px;
+}
+
+.itokawa{
+    left: 149px;
+    top: 1113px;
+}
+
+.hayabusaTop{
+    left: 959px;
+    top: 1762px;
+}
+
+.minerva{
+    left: 26px;
+    top: 2438px;
+}
+
+.landing{
+    left: 385px;
+    top: 2945px;
+}
+
 .ionEngine{
     left: 225px;
     top: 6065px;
@@ -154,3 +203,4 @@ h1{
     transform: rotate(13deg);
 
 }
+
