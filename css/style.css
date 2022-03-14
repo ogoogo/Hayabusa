@@ -8,6 +8,25 @@
 a{
     color: #fff;
 }
+
+
+
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    vertical-align: middle;
+}
+
 header{
     align-items: center;
     display: flex;
@@ -19,6 +38,83 @@ header{
     width: 100vw;
     z-index: 1;
 }
+
+.nav-wrapper {
+	height: 100vh;
+	right: 0;
+	position: fixed;
+	top: 0;
+	transform: translateX(100%);
+	transition: transform .3s;
+	width: 500px;
+	z-index: 2; /*キービジュアルと.btn_triggerとの重なりの前後関係を調整*/
+}
+  .header-nav{        
+    width: 100%;        
+    height: 100%;        
+    background-color:#1B1310;        
+    z-index: 2;      
+  }     
+  .nav-list{        
+    display: block;        
+    position: absolute;        
+    top: 50%;        
+    left: 50%;        
+    transform: translate(-50%,-50%);        
+    text-align: center;      
+  }      
+  .nav-item{        
+    margin-right: 0;        
+    margin-bottom: 40px;      
+  }
+  
+  /* メニューオープン時 */
+  .nav-wrapper.slide-in {
+	transform: translateX(0);
+}
+
+
+.burger-btn{
+    display: block;      
+    width: 64px;      
+    height: 64px;      
+    position: relative;      
+    z-index: 3;
+    border:none;    
+}  
+
+.bar{      
+    width: 40px;      
+    height: 2px;        
+    display: block;      
+    position: absolute;      
+    left: 50%;      
+    transform: translateX(-50%);      
+    background-color: #fff;    
+}  
+.bar_top{   
+    top: 10px;
+  }
+  .bar_mid{    
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .bar_bottom{
+    bottom: 10px;
+  }
+
+  .burger-btn.close .bar_top{      
+    transform: translate(-50%,10px) rotate(45deg);      
+    transition: transform .3s;    
+  }    
+  .burger-btn.close .bar_mid{      
+    opacity: 0;       
+    transition: opacity .3s;    
+  }    
+  .burger-btn.close .bar_bottom{      
+  transform: translate(-50%,-8px) rotate(-45deg);      
+  transition: transform .3s;    
+  }
 
 h2{
     font-size: 36px;

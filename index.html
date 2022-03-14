@@ -8,14 +8,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
+
     <title>はやぶさの世界</title>
 </head>
 <body>
     <header>
-        <a href="">
+        <div class="nav-wrapper">
+            <!-- ②ナビゲーションメニュー -->
+            <nav class="header-nav">
+              <ul class="nav-list">
+                <li class="nav-item"><a href="">はやぶさの軌跡</a></li>
+                <li class="nav-item"><a href="">はやぶさの全体像</a></li>
+                <li class="nav-item"><a href="">Column</a></li>
+              </ul>
+            </nav>
+          </div>
+        <a href="" class="hayabusa_button">
             <img src="images/hayabusa_logo.png" alt="" width="84px">
-            <img src="images/hamburger.png" alt="" width="64px">
         </a>
+        <button class="burger-btn"><!-- ③ハンバーガーボタン -->
+            <span class="bar bar_top"></span>
+            <span class="bar bar_mid"></span>
+            <span class="bar bar_bottom"></span>
+          </button>
+        <!-- <a href="" class="hamburger_button">
+            <img src="images/hamburger.png" alt="" width="64px">
+        </a> -->
+       ß
 
     </header>
     <section class="title">
@@ -179,5 +198,9 @@
         <p>&copy;Sae Ogoshi</p>
 
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
 </body>
 </html>
