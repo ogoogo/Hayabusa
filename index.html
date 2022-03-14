@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
+    <title>Hayabusa</title>
 </head>
 <body>
     <header>
         <a href="">
-            <img src="images/hayabusa_ロゴ.png" alt="">
-            <img src="images/hamburger.png" alt="">
+            <img src="images/hayabusa_logo.png" alt="" width="84px">
+            <img src="images/hamburger.png" alt="" width="64px">
         </a>
 
     </header>
     <section class="title">
-        <div class="particles particles-right"></div>
-        <div class="particles particles-left"></div>
+        <!-- <div class="particles particles-right"></div>
+        <div class="particles particles-left"></div> -->
         <img src="images/hayabusamae.png" alt="" class="hayabusa-front">
         <h1>はやぶさ</h1>
 
@@ -30,83 +34,112 @@
         <h2>はやぶさの軌跡</h2>
         <div class="items uchiage">
             <p class="date">2003<br>05/09</p>
-            <h3>打ち上げ</h3>
-            <p>鹿児島県宇宙空間観測所より打ち上げ。<br>この日に「はやぶさ」と命名されました。</p>
+            <div class="itemcaption">
+                <h3>打ち上げ</h3>
+                <p>鹿児島県宇宙空間観測所より打ち上げ。<br>この日に「はやぶさ」と命名されました。</p>
+            </div>
+            
+            
         </div>
 
         <div class="items itokawaTouchaku">
             <p class="date">2005<br>09/12</p>
-            <h3>イトカワ到着</h3>
-            <p>到着といっても、イトカワから20kmの位置。<br>まずは長旅お疲れ様です！</p>
+            <div class="itemcaption">
+                <h3>イトカワ到着</h3>
+                <p>到着といっても、イトカワから20kmの位置。<br>まずは長旅お疲れ様です！</p>
+            </div>
+  
         </div>
         <div class="items reactionWheelKoshou">
             <p class="date">2003<br>10/01</p>
-            <h3>リアクションホイール故障</h3>
-            <p>宇宙機の姿勢を安定させるには、3つの方向の回転をコントロールしなければなりません。<br>実はイトカワ到着前に1つ故障していたこの
-                リアクションホイール。<br>続いて2つめも故障し、1つの方向の回転しかコントロールできなくなってしまいました。</p>
-
+            <div class="itemcaption">
+                <h3>リアクションホイール故障</h3>
+                <p>宇宙機の姿勢を安定させるには、3つの方向の回転をコントロールしなければなりません。<br>実はイトカワ到着前に1つ故障していたこの
+                    リアクションホイール。<br>続いて2つめも故障し、1つの方向の回転しかコントロールできなくなってしまいました。</p>
+            </div>
         </div>
         <div class="items minerubaBunri">
             <p class="date">2005<br>11/10</p>
-            <h3>ミネルバ分離</h3>
-            <p>はやぶさにくっついていた小型ローバー　ミネルバ。<br>本当はイトカワの地上近くではやぶさから分離し、イトカワの地面を探索するはずだったものの、<br>分離のタイミングがズレたことにより地面に届かず
-                宇宙のかなたに行ってしまいました。<br>悲しさは残りますが、ミネルバが捉えたはやぶさの写真が残っています。</p>
+            <div class="itemcaption">
+                <h3>ミネルバ分離</h3>
+                <p>はやぶさにくっついていた小型ローバー　ミネルバ。<br>本当はイトカワの地上近くではやぶさから分離し、イトカワの地面を探索するはずだったものの、<br>分離のタイミングがズレたことにより地面に届かず
+                    宇宙のかなたに行ってしまいました。<br>悲しさは残りますが、ミネルバが捉えたはやぶさの写真が残っています。</p>
+            </div>
+            
         </div>
         <div class="items koukaChallenge">
             <p class="date">2005<br>11/19</p>
-            <h3>降下チャレンジ</h3>
-            <p>はやぶさの着陸チャレンジ1回目。<br>順調にイトカワに近づいていたものの、<br>「着地した」という信号がはやぶさから来なかったため、緊急で離陸の命令を出してしまいました。<br>後から調べると実際は30分ほど着陸していたそう。</p>
+            <div class="itemcaption">
+                <h3>降下チャレンジ</h3>
+                <p>はやぶさの着陸チャレンジ1回目。<br>順調にイトカワに近づいていたものの、<br>「着地した」という信号がはやぶさから来なかったため、緊急で離陸の命令を出してしまいました。<br>後から調べると実際は30分ほど着陸していたそう。</p>
+            </div>
+            
         </div>
 
         <div class="items koukaSeikou">
             <p class="date">2005<br>11/26</p>
-            <h3>降下成功</h3>
-            <p>２度目は無事に着陸成功。<br>本当は、小さな弾丸を地面に打ち込んで飛び散った砂を採取する予定でしたが、その弾丸は発射できずに終わりました。<br>世界初のサンプル採取成功です！</p>
+            <div class="itemcaption">
+                <h3>降下成功</h3>
+                <p>２度目は無事に着陸成功。<br>本当は、小さな弾丸を地面に打ち込んで飛び散った砂を採取する予定でしたが、その弾丸は発射できずに終わりました。<br>世界初のサンプル採取成功です！</p>
+            </div>
+            
         </div>
 
         <div class="items tsuushinTodaeru">
             <p class="date">2005<br>12/19</p>
-            <h3>通信が途絶える</h3>
-            <p>はやぶさ最大の危機。<br>はやぶさからの信号が一切来なくなりました。<br>実はこの少し前に燃料が大幅に漏れていたことも発覚。<br>地球への帰還は絶望的です。</p>
+            <div class="itemcaption">
+                <h3>通信が途絶える</h3>
+                <p>はやぶさ最大の危機。<br>はやぶさからの信号が一切来なくなりました。<br>実はこの少し前に燃料が大幅に漏れていたことも発覚。<br>地球への帰還は絶望的です。</p>
+            </div>
+            
         </div>
 
         <div class="items koushinFukkatsu">
             <p class="date">2006<br>01/23</p>
-            <h3>交信復活</h3>
-            <p>なんと、はやぶさからの信号がやってきました！<br>しかし信号は途切れ途切れ。まさに「溺れている」状態。<br>太陽電池から供給されるはずの電力もほとんど空...。</p>
+            <div class="itemcaption">
+                <h3>交信復活</h3>
+                <p>なんと、はやぶさからの信号がやってきました！<br>しかし信号は途切れ途切れ。まさに「溺れている」状態。<br>太陽電池から供給されるはずの電力もほとんど空...。</p>
+            </div>
+            
         </div>
 
         <div class="items shinRouteKettei">
             <p class="date">2006<br>03/06</p>
-            <h3>新ルート決定</h3>
-            <p>はやぶさを太陽に向けながらゆっくり電力を回復させつつ、<br>地球に帰るための新たなルートを決定しました。<br>当初の予定より3年長くなりました</p>
+            <div class="itemcaption">
+                <h3>新ルート決定</h3>
+                <p>はやぶさを太陽に向けながらゆっくり電力を回復させつつ、<br>地球に帰るための新たなルートを決定しました。<br>当初の予定より3年長くなりました</p>
+            </div>
+            
         </div>
+
+   
 
         <div class="items ionEngineKoshou">
             <p class="date">2009<br>11/04</p>
-            <h3>イオンエンジン故障</h3>
-            <p>はやぶさが進むために必要なエンジン。<br>4つが搭載されていましたが、実はすでに不調や故障で3基は動いていませんでした。<br>そしてついに4つめのエンジンも故障。<br>不調で休んでいた2つのエンジンを組み合わせて、なんとか1基分に...。</p>
-        </div>
-
-        <div class="items ionEngineKoshou">
-            <p class="date">2009<br>11/04</p>
-            <h3>イオンエンジン故障</h3>
-            <p>はやぶさが進むために必要なエンジン。<br>4つが搭載されていましたが、実はすでに不調や故障で3基は動いていませんでした。<br>そしてついに4つめのエンジンも故障。<br>不調で休んでいた2つのエンジンを組み合わせて、なんとか1基分に...。</p>
+            <div class="itemcaption">
+                <h3>イオンエンジン故障</h3>
+                <p>はやぶさが進むために必要なエンジン。<br>4つが搭載されていましたが、実はすでに不調や故障で3基は動いていませんでした。<br>そしてついに4つめのエンジンも故障。<br>不調で休んでいた2つのエンジンを組み合わせて、なんとか1基分に...。</p>
+            </div>
+            
         </div>
 
         <div class="items  chikyuuHeKikan">
             <p class="date">2010<br>06/13</p>
-            <h3>地球へ帰還</h3>
-            <p>帰還が絶望的とされたはやぶさ。ついに地球に帰還します。<br>イカプセルはパラシュートでオーストラリアのウーメラ砂漠に落下。無事に回収されました</p>
+            <div class="itemcaption">
+                <h3>地球へ帰還</h3>
+                <p>帰還が絶望的とされたはやぶさ。ついに地球に帰還します。<br>イトカワの微粒子が入ったカプセルを地上に落とし、本体は大気圏で燃え尽きました。<br>
+                    その様子は特大流れ星。<br>カプセルはパラシュートでオーストラリアのウーメラ砂漠に落下。無事に回収されました。</p>
+            </div>
+            
         </div>
 
-        <img src="images/rocket.png" alt="" class="rocket">
-        <img src="images/itokawa.png" alt="" class="itokawa">
-        <img src="images/hayabusatop.png" alt="" class="hayabusaTop">
-        <img src="images/minerva.png" alt="" class="minerva">
-        <img src="images/landing.png" alt="" class="landing">
-        <img src="images/ionengine.png" alt="" class="ionEngine">
-        <img src="images/parashuto.png" alt="" class="parashuto">
+        <img src="images/rocket.png" alt="" class="rocket" width="526px">
+        <img src="images/itokawa.png" alt="" class="itokawa" width="506px">
+        <img src="images/hayabusatop.png" alt="" class="hayabusaTop" width="322px">
+        <img src="images/minerva.png" alt="" class="minerva" width="327px">
+        <img src="images/landing.png" alt="" class="landing" width="523px">
+        <img src="images/ionengine.png" alt="" class="ionEngine" width="452px">
+        <img src="images/parashuto.png" alt="" class="parashuto" width="476px">
 
         <img src="" alt="" class="light1">
         <img src="" alt="" class="light2">

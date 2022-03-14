@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Shippori Mincho', serif;
+}
+
+header{
+    align-items: center;
+    
+    display: flex;
+    height: 90px;
+    justify-content: space-between;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+
+h2{
+    font-size: 36px;
+}
+
+.title{
+    background-color: #003149;
+    height: 100vh;
+    position: relative;
+    width: 100vw;
+    z-index: 0;
+    
+}
+.hayabusa-front{
+    
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+}
+
+h1{
+    color: #fff;
+    font-size: 64px;
+    left: 50%;
+    letter-spacing: 2em;
+    position: absolute;
+    text-align: center;
+    top: 80%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100vw;
+}
+
+.introduction{
+    height: 100vh;
+    position: relative;
+}
+
+.introduction p{
+    color: #003149;
+    font-size: 24px;
+    left: 50%;
+    line-height: 120px;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.timeline{
+    color: #fff;
+    background-color: #003149;
+    height: 7500px;
+    position: relative;
+}
+
+.timeline h2{
+    font-weight: normal;
+    letter-spacing: 1em;
+    padding-top: 225px;
+    text-align: center;
+}
+
+.items{
+    display: flex;
+    position: absolute;
+}
+
+.date{
+    font-size: 24px;
+    text-align: center;
+}
+
+.itemcaption{
+    margin-left: 30px;
+}
+.itemcaption h3{
+    font-size: 36px;
+    font-weight: normal;
+}
+.itemcaption p{
+    font-size: 14px;
+    line-height: 40px;
+    margin-top: 24px;
+}
+
+.uchiage{
+    left: 189px;
+}
+
+.koukaSeikou{
+    left: 189px;
+}
+
+.tsuushinTodaeru{
+    left: 524px;
+    top: 4134px;
+}
+
+.koushinFukkatsu{
+    left: 524px;
+    top: 5102px;
+}
+
+.shinRouteKettei{
+    left: 183px;
+    top: 5620px;
+}
+
+.ionEngineKoshou{
+    left: 754px;
+    top: 6140px;
+}
+
+.chikyuuHeKikan{
+    left: 420px;
+    top: 6964px;
+}
+
+
+
+
+/*img設定*/
+.timeline img{
+    position: absolute;
+}
+
+.ionEngine{
+    left: 225px;
+    top: 6065px;
+    transform: rotate(-16deg);
+}
+
+.parashuto{
+    left: 937px;
+    top: 6914px;
+    transform: rotate(13deg);
+
+}
