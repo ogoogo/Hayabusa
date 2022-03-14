@@ -28,10 +28,10 @@ button {
 }
 
 header{
-    align-items: center;
-    display: flex;
+    
+    
     height: 90px;
-    justify-content: space-between;
+    
     /* left: 0; */
     position: fixed;
     /* top: 0; */
@@ -52,7 +52,7 @@ header{
   .header-nav{        
     width: 100%;        
     height: 100%;        
-    background-color:#1B1310;        
+    background-image: url(../images/hambg_2.png);        
     z-index: 2;      
   }     
   .nav-list{        
@@ -61,11 +61,22 @@ header{
     top: 50%;        
     left: 50%;        
     transform: translate(-50%,-50%);        
-    text-align: center;      
+    text-align: left;      
   }      
   .nav-item{        
+      
     margin-right: 0;        
-    margin-bottom: 40px;      
+    margin-top: 60px;      
+  }
+
+  .detail{
+      margin-left: 30px;
+      margin-top: 10px;
+  }
+
+  .nav-list a{
+    color: #003149;
+    font-size: 18px;
   }
   
   /* メニューオープン時 */
@@ -73,14 +84,25 @@ header{
 	transform: translateX(0);
 }
 
-
+/* .icons{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+} */
+/* .hayabusa-button{
+    display: inline-block;
+} */
 .burger-btn{
-    display: block;      
-    width: 64px;      
-    height: 64px;      
-    position: relative;      
-    z-index: 3;
-    border:none;    
+    border:none; 
+    display: inline-block;      
+         
+    height: 39px;    
+    margin-top: 0px;  
+    position: fixed;      
+    right: 30px;
+     top: 20px;
+    width: 39px; 
+    z-index: 3;  
 }  
 
 .bar{      
@@ -104,16 +126,20 @@ header{
   }
 
   .burger-btn.close .bar_top{      
-    transform: translate(-50%,10px) rotate(45deg);      
-    transition: transform .3s;    
+    transform: translate(-50%,10px) rotate(45deg);  
+    background-color: #003149;    
+    transition: .3s;  
+    
   }    
   .burger-btn.close .bar_mid{      
-    opacity: 0;       
+    opacity: 0; 
     transition: opacity .3s;    
+    
   }    
   .burger-btn.close .bar_bottom{      
-  transform: translate(-50%,-8px) rotate(-45deg);      
-  transition: transform .3s;    
+  transform: translate(-50%,-8px) rotate(-45deg); 
+  background-color: #003149;       
+  transition: .3s;    
   }
 
 h2{
