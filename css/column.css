@@ -2,4 +2,119 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-family: 'Shippori Mincho', serif;
+    
+    list-style: none;
+}
+a{
+    color: #fff;
+}
+
+header{
+    align-items: center;
+    display: flex;
+    height: 90px;
+    justify-content: space-between;
+    /* left: 0; */
+    position: fixed;
+    /* top: 0; */
+    width: 100vw;
+    z-index: 1;
+}
+
+.content{
+    background-color: #003149;
+    color: #fff;
+    height: 3450px;
+    position: relative;
+}
+h2{
+    font-size: 36px;
+    letter-spacing: 1em;
+    padding-top: 161px;
+    text-align: center;
+}
+
+.contents{
+    position: absolute;
+}
+
+.texts h3{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.text{
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 50px;
+    margin-top: 47px;
+}
+.deco{
+    color: #FDEBD1;
+    font-family: 'Sacramento', cursive;
+    font-size: 36px;
+    margin-top: -2px;
+
+}
+/*テキスト配置*/
+.sampleReturn{
+    left: 788px;
+    top: 450px;
+}
+
+.itokawa{
+    left: 214px;
+    top: 1300px;
+}
+
+.hayabusa{
+    left: 789px;
+    top: 2391px;
+}
+
+/*画像配置*/
+.content img{
+    position: absolute;
+}
+
+.sample_img{
+    left: 57px;
+    top: 355px;
+
+}
+
+.itokawa_img{
+    left: 672px;
+    top: 1146px;
+}
+
+.hayabusa_img{
+    left: 229px;
+    top: 2496px;
+}
+
+/*ボタン*/
+.back_button{
+    background-color: #fff;
+    bottom: 100px;
+    color: #003149;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    height: 66px;
+    
+    line-height: 66px;
+    position: fixed;
+    left : 0;
+    
+    width: 236px;
+}
+
+footer{
+    background-color: #003149;
+    color: #fff;
+    height: 130px;
+    line-height: 130px;
+    text-align: center;
 }
