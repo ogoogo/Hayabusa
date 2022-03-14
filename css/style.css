@@ -208,6 +208,33 @@ h1{
 
 }
 
+/*timeline画像終わり*/
+
+/*timelineボタン*/
+.column-button{
+    background-color: #fff;
+    color: #003149;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    height: 66px;
+    
+    line-height: 66px;
+    position: absolute;
+    right: 0;
+    
+    width: 236px;
+}
+
+.button-itokawa{
+    top: 1565px;
+    
+}
+
+.button-sample{
+    top: 3752px;
+}
+
 .hayabusaBody{
     background-color: #003149;
     color: #fff;
