@@ -369,6 +369,40 @@ h1{
 
 }
 
+.ion1{
+    position: absolute;
+    left: 366px;
+    top: 6110px;
+    transform: rotate(-16deg);
+    opacity: 0;
+}
+.ion2{
+    position: absolute;
+    left: 264px;
+    top: 6134px;
+    transform: rotate(-16deg);
+    opacity: 0;
+
+}
+
+.ion3{
+    position: absolute;
+    left: 388px;
+    top: 6195px;
+    transform: rotate(-16deg);
+    opacity: 0;
+}
+
+.ion4{
+    position: absolute;
+    left: 284px;
+    top: 6225px;
+    transform: rotate(-16deg);
+    opacity: 0;
+}
+
+
+
 /*timeline画像終わり*/
 
 /*タイムラインpolygon*/
@@ -465,6 +499,7 @@ svg{
 
 #movingHayabusa{
     position: absolute;
+    
 }
 
 

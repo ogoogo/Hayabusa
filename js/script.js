@@ -1,4 +1,13 @@
 gsap.registerPlugin(MotionPathPlugin);
+gsap.registerPlugin(ScrollTrigger);
+
+// gasp.to(".movingHayabusa",{
+//     autoAlpha:1,
+//     scrollTrigger:{
+//         trigger:".rocket",
+//         start:"top center",
+//     }
+// });
 
 // The start and end positions in terms of the page scroll
 const offsetFromTop1 = innerHeight * 0.5;
@@ -34,7 +43,7 @@ const finishDistance9 = pathBB9.height;
 var tween1 = gsap.to("#haya1", {
   duration: 1, 
   paused: true,
-  ease: "none",
+//   ease: "none",
   motionPath: {
     path: "#vec1",
     align: "#vec1",
@@ -46,7 +55,7 @@ var tween1 = gsap.to("#haya1", {
 var tween2 = gsap.to("#haya2", {
     duration: 5, 
     paused: true,
-    ease: "none",
+    // ease: "none",
     motionPath: {
       path: "#vec2",
       align: "#vec2",
@@ -58,7 +67,7 @@ var tween2 = gsap.to("#haya2", {
   var tween3 = gsap.to("#haya3", {
     duration: 5, 
     paused: true,
-    ease: "none",
+    // ease: "none",
     motionPath: {
       path: "#vec3",
       align: "#vec3",
@@ -70,7 +79,7 @@ var tween2 = gsap.to("#haya2", {
   var tween4 = gsap.to("#haya4", {
     duration: 5, 
     paused: true,
-    ease: "none",
+    // ease: "none",
     motionPath: {
       path: "#vec4",
       align: "#vec4",
@@ -82,7 +91,7 @@ var tween2 = gsap.to("#haya2", {
   var tween5 = gsap.to("#haya5", {
     duration: 5, 
     paused: true,
-    ease: "none",
+    // ease: "none",
     motionPath: {
       path: "#vec5",
       align: "#vec5",
@@ -94,7 +103,7 @@ var tween2 = gsap.to("#haya2", {
   var tween6 = gsap.to("#haya6", {
     duration: 5, 
     paused: true,
-    ease: "none",
+    // ease: "none",
     motionPath: {
       path: "#vec6",
       align: "#vec6",
@@ -106,7 +115,7 @@ var tween2 = gsap.to("#haya2", {
   var tween7 = gsap.to("#haya7", {
     duration: 5, 
     paused: true,
-    ease: "none",
+    // ease: "none",
     motionPath: {
       path: "#vec7",
       align: "#vec7",
@@ -118,7 +127,7 @@ var tween2 = gsap.to("#haya2", {
   var tween8 = gsap.to("#haya8", {
     duration: 5, 
     paused: true,
-    ease: "none",
+    // ease: "none",
     motionPath: {
       path: "#vec8",
       align: "#vec8",
@@ -130,7 +139,7 @@ var tween2 = gsap.to("#haya2", {
   var tween9 = gsap.to("#haya9", {
     duration: 5, 
     paused: true,
-    ease: "none",
+    // ease: "none",
     motionPath: {
       path: "#vec9",
       align: "#vec9",
@@ -164,6 +173,54 @@ function update() {
   // Let the scroll event fire again
   requestId = null;
 }
+
+gsap.to('.ion1', { 
+    autoAlpha: 1, //opacity: 1;とvisibility：visible;がつく
+    scrollTrigger: {
+      trigger: '.ion1',
+      start: 'top center'
+    }
+  });
+
+  gsap.to('.ion2', { 
+    autoAlpha: 1, //opacity: 1;とvisibility：visible;がつく
+    scrollTrigger: {
+      trigger: '.ion2',
+      start: 'top center'
+    }
+  });
+
+  gsap.to('.ion3', { 
+    autoAlpha: 1, //opacity: 1;とvisibility：visible;がつく
+    scrollTrigger: {
+      trigger: '.ion3',
+      start: 'top center'
+    }
+  });
+
+  gsap.to('.ion4', { 
+    autoAlpha: 1, //opacity: 1;とvisibility：visible;がつく
+    scrollTrigger: {
+      trigger: '.ion4',
+      start: 'top center'
+    }
+  });
+
+  gsap.to(".hayabusaTop",{
+      rotation:360,
+      duration:2,
+      ease:"none",
+      repeat:-1,
+      scrollTrigger:{
+          trigger:".hayabusaTop",
+          start:"center 75%",
+          end:"center 25%"
+
+      }
+      
+  });
+
+ 
 
 $(function () {
     $('.burger-btn').on('click',function(){
