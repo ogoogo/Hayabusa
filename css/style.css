@@ -376,6 +376,27 @@ h1{
     top: 3752px;
 }
 
+
+/*moving Hayabusa*/
+svg{
+    position: absolute;
+    
+}
+
+/* .arrow1{
+    left: 249px;
+} */
+
+/* #vec1{
+    transform: translateX(249px);
+} */
+
+
+#movingHayabusa{
+    position: absolute;
+}
+
+/*全体像*/
 .hayabusaBody{
     background-color: #003149;
     color: #fff;
