@@ -1,7 +1,7 @@
 gsap.registerPlugin(MotionPathPlugin);
 
 // The start and end positions in terms of the page scroll
-const offsetFromTop1 = innerHeight * 0.25;
+const offsetFromTop1 = innerHeight * 0.5;
 const pathBB1 = document.querySelector("#vec1").getBoundingClientRect();
 const pathBB2 = document.querySelector("#vec2").getBoundingClientRect();
 const pathBB3 = document.querySelector("#vec3").getBoundingClientRect();
@@ -20,15 +20,15 @@ const startY6 = pathBB6.top - innerHeight + offsetFromTop1;
 const startY7 = pathBB7.top - innerHeight + offsetFromTop1;
 const startY8 = pathBB8.top - innerHeight + offsetFromTop1;
 const startY9 = pathBB9.top - innerHeight + offsetFromTop1;
-const finishDistance1 = startY1 + pathBB1.height - offsetFromTop1;
-const finishDistance2 = startY2 + pathBB2.height - offsetFromTop1;
-const finishDistance3 = startY3 + pathBB3.height - offsetFromTop1;
-const finishDistance4 = startY4 + pathBB4.height - offsetFromTop1;
-const finishDistance5 = startY5 + pathBB5.height - offsetFromTop1;
-const finishDistance6 = startY6 + pathBB6.height - offsetFromTop1;
-const finishDistance7 = startY7 + pathBB7.height - offsetFromTop1;
-const finishDistance8 = startY8 + pathBB8.height - offsetFromTop1;
-const finishDistance9 = startY9 + pathBB9.height - offsetFromTop1;
+const finishDistance1 = pathBB1.height;
+const finishDistance2 = pathBB2.height;
+const finishDistance3 =pathBB3.height;
+const finishDistance4 = pathBB4.height ;
+const finishDistance5 =  pathBB5.height;
+const finishDistance6 = pathBB6.height;
+const finishDistance7 = pathBB7.height;
+const finishDistance8 = pathBB8.height;
+const finishDistance9 = pathBB9.height;
 
 // the animation to use
 var tween1 = gsap.to("#haya1", {
