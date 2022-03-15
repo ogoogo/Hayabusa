@@ -32,7 +32,7 @@ const finishDistance9 = startY9 + pathBB9.height - offsetFromTop1;
 
 // the animation to use
 var tween1 = gsap.to("#haya1", {
-  duration: 5, 
+  duration: 1, 
   paused: true,
   ease: "none",
   motionPath: {

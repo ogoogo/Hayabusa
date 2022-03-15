@@ -48,13 +48,13 @@ header{
 	transform: translateX(100%);
 	transition: transform .3s;
 	width: 500px;
-	z-index: 2; /*キービジュアルと.btn_triggerとの重なりの前後関係を調整*/
+	z-index: 4; /*キービジュアルと.btn_triggerとの重なりの前後関係を調整*/
 }
   .header-nav{        
     width: 100%;        
     height: 100%;        
     background-image: url(../images/hambg_2.png);        
-    z-index: 2;      
+    z-index: 4;      
   }     
   .nav-list{        
     display: block;        
@@ -78,7 +78,24 @@ header{
   .nav-list a{
     color: #003149;
     font-size: 18px;
+    position: relative;
   }
+
+.nav-list a::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #003140;
+    bottom: -1px;
+    transform: scale(0, 1);
+    transform-origin: center top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の右端*/
+    transition: transform 0.3s;   /*変形の時間*/
+}
+.nav-list a:hover::after {
+    transform: scale(1, 1); /*ホバー後、x軸方向に1（相対値）伸長*/
+}
   
   /* メニューオープン時 */
   .nav-wrapper.slide-in {
@@ -103,7 +120,7 @@ header{
     right: 30px;
      top: 20px;
     width: 39px; 
-    z-index: 3;  
+    z-index: 5;  
 }  
 
 .bar{      
@@ -155,6 +172,7 @@ h2{
     background-color: #003149;
     height: 100vh;
     position: relative;
+    text-align: center;
     width: 100vw;
     z-index: 0;
     
@@ -227,6 +245,7 @@ h1{
 .items{
     display: flex;
     position: absolute;
+    z-index: 3;
 }
 
 .date{
@@ -309,6 +328,7 @@ h1{
 /*timelineのimg設定*/
 .timeline img{
     position: absolute;
+    z-index: 2;
 }
 
 .rocket{
@@ -350,6 +370,50 @@ h1{
 }
 
 /*timeline画像終わり*/
+
+/*タイムラインpolygon*/
+.pol{
+    position: absolute;
+    z-index: 1;
+}
+
+.pol1{
+    left: 0;
+    top: 472px;
+}
+.pol2{
+    right: 0;
+    top: 1082px;
+}
+.pol3{
+    left: 0;
+    top: 1710px;
+}
+.pol4{
+    left: 435px;
+    top: 2308px;
+}
+.pol5{
+    right: 0;
+    top: 2770px;
+}
+.pol6{
+    left: 22px;
+    top: 3492px;
+}
+.pol7{
+    left: 407px;
+    top: 4015px;
+}
+.pol8{
+    left: 18px;
+    top: 5508px;
+}
+.pol9{
+    left: 650px;
+    top: 6002px;
+}
+
 
 /*timelineボタン*/
 .column-button{

@@ -41,6 +41,7 @@ h2{
 
 .contents{
     position: absolute;
+    z-index: 3;
 }
 
 .texts h3{
@@ -80,6 +81,7 @@ h2{
 /*画像配置*/
 .content img{
     position: absolute;
+    z-index: 2;
 }
 
 .sample_img{
@@ -96,6 +98,26 @@ h2{
 .hayabusa_img{
     left: 229px;
     top: 2496px;
+}
+
+/*長方形配置*/
+.rec{
+    position: absolute;
+    z-index: 1;
+}
+.rec1{
+    right: 0;
+    top: 390px;
+}
+
+.rec2{
+    left: 0;
+    top: 1262px;
+}
+
+.rec3{
+    right: 0;
+    top: 2321px;
 }
 
 /*ボタン*/
