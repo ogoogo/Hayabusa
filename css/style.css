@@ -365,8 +365,15 @@ h1{
     right: 0;
     
     width: 236px;
+    transition: .5s;
 }
 
+.column-button:hover{
+    background-color: #005F8B;
+    color: #fff;
+    transition: all .5s;
+
+}
 .button-itokawa{
     top: 1565px;
     
@@ -395,6 +402,8 @@ svg{
 #movingHayabusa{
     position: absolute;
 }
+
+
 
 /*全体像*/
 .hayabusaBody{
@@ -428,10 +437,28 @@ svg{
 .buttons {
    line-height: 4em;
    width: 350px;
+}
+.buttons a{
+    position: relative;
 
-    
 }
 
+.buttons a::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    bottom: -1px;
+    transform: scale(0, 1);
+    transform-origin: center top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の右端*/
+    transition: transform 0.3s;   /*変形の時間*/
+}
+    
+.buttons a:hover::after {
+    transform: scale(1, 1); /*ホバー後、x軸方向に1（相対値）伸長*/
+}
 
 .last{
     background-color: #fff;

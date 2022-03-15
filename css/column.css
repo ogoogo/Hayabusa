@@ -110,9 +110,17 @@ h2{
     
     line-height: 66px;
     position: fixed;
+    transition: all .5s;
     left : 0;
     
     width: 236px;
+}
+
+.back_button:hover{
+    background-color: #005F8B;
+    color: #fff;
+    transition: all .5s;
+
 }
 
 footer{
