@@ -5,6 +5,7 @@
     text-decoration: none;
     font-family: 'Shippori Mincho', serif;
     list-style: none;
+    box-sizing: border-box;
 }
 a{
     color: #fff;

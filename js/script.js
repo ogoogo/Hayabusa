@@ -220,6 +220,49 @@ gsap.to('.ion1', {
       
   });
 
+  gsap.to(".rocket",{
+      y:50,
+      scrollTrigger:{
+          trigger:".pol1",
+          start:"top 75%",
+          end:"bottom top",
+          markers:true,
+          scrub:true
+          
+      }
+  });
+  gsap.to(".itokawa",{
+    y:50,
+    scrollTrigger:{
+        trigger:".pol2",
+        start:"top 75%",
+        end:"bottom top",
+        markers:true,
+        scrub:true
+        
+    }
+});
+
+gsap.to(".minerva",{
+    y:50,
+    scrollTrigger:{
+        trigger:".pol4",
+        start:"top 75%",
+        end:"bottom top",
+        markers:true,
+        scrub:true
+        
+    }
+});
+
+
+
+//   var rellax = new Rellax('.rellax',{
+//       speed:-2,
+//       wrapper:".timeline",
+//       relativeToWrapper:"true"
+//   });
+
  
 
 $(function () {
