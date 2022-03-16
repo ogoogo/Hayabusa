@@ -522,36 +522,43 @@ svg{
     background-color: #003149;
     color: #fff;
  
-    height: 874px;
+    height: 1200px;
 }
 .hayabusa_body h2{
     margin-top: 82px;
 }
 
 .body-content{
-    align-items: center;
+    align-items: start;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 220px;
     margin-left: 100px;
     margin-right: 100px;
 }
-.caption{
+
+.bodyImages img{
+    display: block;
+    margin: 0 auto;
+
+}
+/* .caption{
     background-color: #fff;
     height: 350px;
     width: 350px;
-}
+} */
 
 .hayabusa_body{
     /* height: 210px; */
 }
 
 .buttons {
-   line-height: 4em;
+   line-height: 6em;
    width: 350px;
 }
 .buttons a{
     position: relative;
+    
 
 }
 
@@ -570,6 +577,11 @@ svg{
     
 .buttons a:hover::after {
     transform: scale(1, 1); /*ホバー後、x軸方向に1（相対値）伸長*/
+}
+
+.caption{
+    line-height: 2em;
+    margin-left: 50px;
 }
 
 .last{

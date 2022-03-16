@@ -264,6 +264,66 @@ gsap.to(".minerva",{
 //       relativeToWrapper:"true"
 //   });
 
+$(function () {
+    $('.bodyButton1').nextAll().hide();
+    $('.bodyButton1').click(function () {
+        if ($(this).nextAll().is(':hidden')) {
+            $(this).nextAll().slideDown();
+            $(this).text('-　サンプル採取装置');
+        } else {
+            $(this).nextAll().slideUp();
+            $(this).text('+　サンプル採取装置');
+        }
+    });
+});
+$(function () {
+    $('.bodyButton2').nextAll().hide();
+    $('.bodyButton2').click(function () {
+        if ($(this).nextAll().is(':hidden')) {
+            $(this).nextAll().slideDown();
+            $(this).text('-　再突入カプセル');
+        } else {
+            $(this).nextAll().slideUp();
+            $(this).text('+　再突入カプセル');
+        }
+    });
+});
+$(function () {
+    $('.bodyButton3').nextAll().hide();
+    $('.bodyButton3').click(function () {
+        if ($(this).nextAll().is(':hidden')) {
+            $(this).nextAll().slideDown();
+            $(this).text('-　探査ローバー　ミネルバ');
+        } else {
+            $(this).nextAll().slideUp();
+            $(this).text('+　探査ローバー　ミネルバ');
+        }
+    });
+});
+$(function () {
+    $('.bodyButton4').nextAll().hide();
+    $('.bodyButton4').click(function () {
+        if ($(this).nextAll().is(':hidden')) {
+            $(this).nextAll().slideDown();
+            $(this).text('-　イオンエンジン');
+        } else {
+            $(this).nextAll().slideUp();
+            $(this).text('+　イオンエンジン');
+        }
+    });
+});
+$(function () {
+    $('.bodyButton5').nextAll().hide();
+    $('.bodyButton5').click(function () {
+        if ($(this).nextAll().is(':hidden')) {
+            $(this).nextAll().slideDown();
+            $(this).text('-　太陽電池パドル');
+        } else {
+            $(this).nextAll().slideUp();
+            $(this).text('+　太陽電池パドル');
+        }
+    });
+});
  
 
 $(function () {
