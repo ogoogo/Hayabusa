@@ -228,8 +228,9 @@ h1{
 
 /*introduction*/
 .introduction{
-    background-color: #EAF5F5;
-    height: 100vh;
+    /* #EAF5F5 */
+    background :linear-gradient(#003149,#EAF5F5 33% 67%,#003149) ;
+    height: 160vh;
     position: relative;
 }
 
@@ -522,7 +523,7 @@ svg{
     background-color: #003149;
     color: #fff;
  
-    height: 1200px;
+    height: 1000px;
 }
 .hayabusa_body h2{
     margin-top: 82px;
@@ -585,18 +586,20 @@ svg{
 }
 
 .last{
-    background-color: #fff;
-    height: 874px;
+  
+    background: linear-gradient(#003149, #EAF5F5 30%);
+    height: 1000px;
 }
 .last p{
     color: #003149;
     font-size: 24px;
     line-height: 120px;
-    margin-top: 100px;
+    padding-top: 250px;
     text-align: center;
 }
 footer{
-    height: 130px;
-    line-height: 130px;
+    background-color: #EAF5F5;
+    height: 90px;
+    line-height: 90px;
     text-align: center;
 }
