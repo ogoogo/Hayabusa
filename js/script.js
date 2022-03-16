@@ -227,7 +227,7 @@ gsap.to('.ion1', {
           trigger:".pol1",
           start:"top 75%",
           end:"bottom top",
-          markers:true,
+          
           scrub:true
           
       }
@@ -238,7 +238,7 @@ gsap.to('.ion1', {
         trigger:".pol2",
         start:"top 75%",
         end:"bottom top",
-        markers:true,
+        
         scrub:true
         
     }
@@ -250,12 +250,39 @@ gsap.to(".minerva",{
         trigger:".pol4",
         start:"top 75%",
         end:"bottom top",
-        markers:true,
+        
         scrub:true
         
     }
 });
 
+gsap.to(".light1",{
+    autoAlpha:1,
+    duration:3,
+    scrollTrigger:{
+        trigger:".pol7",
+        start:"bottom top",  
+    }
+});
+
+gsap.to(".koushinFukkatsu",{
+    autoAlpha:1,
+    duration:3,
+    delay:2,
+    scrollTrigger:{
+        trigger:".pol7",
+        start:"bottom top",  
+    }
+});
+gsap.to(".light2",{
+    y:759,
+    duration:5,
+    
+    scrollTrigger:{
+        trigger:".light2",
+        start:"center 25%",  
+    }
+});
 
 
 //   var rellax = new Rellax('.rellax',{

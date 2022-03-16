@@ -320,6 +320,7 @@ h1{
 .koushinFukkatsu{
     left: 524px;
     top: 5102px;
+    opacity: 0;
 }
 
 .shinRouteKettei{
@@ -516,6 +517,26 @@ svg{
     position: absolute;
     
 }
+
+
+/*ライト*/
+.light1{
+    position: absolute;
+    z-index: 0;
+    left: 212px;
+    top: 4538px;
+    opacity: 0;
+
+}
+.light2{
+    position: absolute;
+    z-index: 0;
+    left: 610px;
+    top: 6135px;
+    /* opacity: 0; */
+
+}
+
 
 
 
