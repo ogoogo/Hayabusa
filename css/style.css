@@ -247,7 +247,8 @@ h1{
 
 .timeline{
     color: #fff;
-    background-color: #003149;
+    background-image: url(../images/bglong.png);
+    background-size: cover;
     height: 7500px;
     position: relative;
 }
