@@ -297,9 +297,11 @@ $(function () {
         if ($(this).nextAll().is(':hidden')) {
             $(this).nextAll().slideDown();
             $(this).text('-　サンプル採取装置');
+            $(".sampleLight").css("opacity",1);
         } else {
             $(this).nextAll().slideUp();
             $(this).text('+　サンプル採取装置');
+            $(".sampleLight").css("opacity",0);
         }
     });
 });
@@ -309,9 +311,11 @@ $(function () {
         if ($(this).nextAll().is(':hidden')) {
             $(this).nextAll().slideDown();
             $(this).text('-　再突入カプセル');
+            $(".capsuleLight").css("opacity",1);
         } else {
             $(this).nextAll().slideUp();
             $(this).text('+　再突入カプセル');
+            $(".capsuleLight").css("opacity",0);
         }
     });
 });
@@ -321,9 +325,11 @@ $(function () {
         if ($(this).nextAll().is(':hidden')) {
             $(this).nextAll().slideDown();
             $(this).text('-　探査ローバー　ミネルバ');
+            $(".minervaLight").css("opacity",1);
         } else {
             $(this).nextAll().slideUp();
             $(this).text('+　探査ローバー　ミネルバ');
+            $(".minervaLight").css("opacity",0);
         }
     });
 });
@@ -333,9 +339,11 @@ $(function () {
         if ($(this).nextAll().is(':hidden')) {
             $(this).nextAll().slideDown();
             $(this).text('-　イオンエンジン');
+            $(".ionLight").css("opacity",1);
         } else {
             $(this).nextAll().slideUp();
             $(this).text('+　イオンエンジン');
+            $(".ionLight").css("opacity",0);
         }
     });
 });
@@ -345,9 +353,13 @@ $(function () {
         if ($(this).nextAll().is(':hidden')) {
             $(this).nextAll().slideDown();
             $(this).text('-　太陽電池パドル');
+            $(".solarLight1").css("opacity",1);
+            $(".solarLight2").css("opacity",1);
         } else {
             $(this).nextAll().slideUp();
             $(this).text('+　太陽電池パドル');
+            $(".solarLight1").css("opacity",0);
+            $(".solarLight2").css("opacity",0);
         }
     });
 });

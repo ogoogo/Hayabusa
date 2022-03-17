@@ -544,6 +544,7 @@ svg{
 .hayabusaBody{
     background-color: #003149;
     color: #fff;
+    position: relative;
  
     height: 1000px;
 }
@@ -605,6 +606,48 @@ svg{
 .caption{
     line-height: 2em;
     margin-left: 50px;
+}
+
+.sampleLight{
+    position: absolute;
+    left: 295px;
+    top: 580px;
+    opacity: 0;
+}
+
+.minervaLight{
+    position: absolute;
+    left: 280px;
+    top: 548px;
+    opacity: 0;
+}
+
+.capsuleLight{
+    position: absolute;
+    left: 285px;
+    top: 513px;
+    opacity: 0;
+}
+
+.ionLight{
+    position: absolute;
+    left: 345px;
+    top: 335px;
+    opacity: 0;
+}
+
+.solarLight1{
+    position: absolute;
+    left: 180px;
+    top: 255px;
+    opacity: 0;
+}
+
+.solarLight2{
+    position: absolute;
+    left: 490px;
+    top: 255px;
+    opacity: 0;
 }
 
 .last{
