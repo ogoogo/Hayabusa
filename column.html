@@ -12,12 +12,29 @@
 </head>
 <body>
     <header>
-        <a href="" class="hayabusa_button">
-            <img src="images/hayabusa_logo.png" alt="" width="84px">
-        </a>
-        <a href="" class="hamburger_button">
-            <img src="images/hamburger.png" alt="" width="64px">
-        </a>
+        <div class="nav-wrapper">
+            <!-- ②ナビゲーションメニュー -->
+            <nav class="header-nav">
+              <ul class="nav-list">
+                <li class="nav-item"><a href="index.html#kiseki">はやぶさの軌跡</a></li>
+                <li class="nav-item"><a href="index.html#zentaizou">はやぶさの全体像</a></li>
+                <li class="nav-item"><a href="column.html">Column</a></li>
+                <li class="detail"><a href="#sample">about サンプルリターン</a></li>
+                <li class="detail"><a href="#itokawa">about イトカワ</a></li>
+                <li class="detail"><a href="#hayabusa">about はやぶさの由来</a></li>
+              </ul>
+            </nav>
+        </div>
+        
+            <a href="index.html" class="hayabusa_button">
+                <img src="images/hayabusa_logo.png" alt="" width="84px">
+            </a>
+            <button class="burger-btn"><!-- ③ハンバーガーボタン -->
+                <span class="bar bar_top"></span>
+                <span class="bar bar_mid"></span>
+                <span class="bar bar_bottom"></span>
+            </button>
+
 
     </header>
     <section class="content">
@@ -53,9 +70,9 @@
         <img src="images/column_itokawa.png" alt="" class="itokawa_img">
         <img src="images/column_hayabusa.png" alt="" class="hayabusa_img">
 
-        <img src="images/Rectangle35.png" alt="" class="rec rec1">
-        <img src="images/Rectangle36.png" alt="" class="rec rec2">
-        <img src="images/Rectangle37.png" alt="" class="rec rec3">
+        <img src="images/Rectangle35.png" alt="" class="rec rec1" id="sample"> 
+        <img src="images/Rectangle36.png" alt="" class="rec rec2" id="itokawa"> 
+        <img src="images/Rectangle37.png" alt="" class="rec rec3" id="hayabusa">
 
         <a href="index.html" class="back_button">← Back</a>
     </section>
@@ -63,5 +80,16 @@
         <p>&copy;Sae Ogoshi</p>
 
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function () {
+        $('.burger-btn').on('click',function(){
+        $('.burger-btn').toggleClass('close');
+        $('.nav-wrapper').toggleClass('slide-in'); // 書き換え
+        $('body').toggleClass('noscroll');
+      });
+  });
+    </script>
 </body>
 </html>

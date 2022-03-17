@@ -10,11 +10,27 @@ a{
     color: #fff;
 }
 
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    vertical-align: middle;
+}
+
 header{
-    align-items: center;
-    display: flex;
+    
+    
     height: 90px;
-    justify-content: space-between;
+    
     /* left: 0; */
     position: fixed;
     /* top: 0; */
@@ -22,9 +38,130 @@ header{
     z-index: 1;
 }
 
-.hayabusa_button{
-    margin-left: 30px;
+.nav-wrapper {
+	height: 100vh;
+	right: 0;
+	position: fixed;
+	top: 0;
+	transform: translateX(100%);
+	transition: transform .3s;
+	width: 500px;
+	z-index: 4; /*キービジュアルと.btn_triggerとの重なりの前後関係を調整*/
 }
+  .header-nav{        
+    width: 100%;        
+    height: 100%;        
+    background-image: url(../images/hambg_2.png);        
+    z-index: 4;      
+  }     
+  .nav-list{        
+    display: block;        
+    position: absolute;        
+    top: 50%;        
+    left: 50%;        
+    transform: translate(-50%,-50%);        
+    text-align: left;      
+  }      
+  .nav-item{        
+      
+    margin-right: 0;        
+    margin-top: 60px;      
+  }
+
+  .detail{
+      margin-left: 30px;
+      margin-top: 10px;
+  }
+
+  .nav-list a{
+    color: #003149;
+    font-size: 18px;
+    position: relative;
+  }
+
+.nav-list a::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #003140;
+    bottom: -1px;
+    transform: scale(0, 1);
+    transform-origin: center top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の右端*/
+    transition: transform 0.3s;   /*変形の時間*/
+}
+.nav-list a:hover::after {
+    transform: scale(1, 1); /*ホバー後、x軸方向に1（相対値）伸長*/
+}
+  
+  /* メニューオープン時 */
+  .nav-wrapper.slide-in {
+	transform: translateX(0);
+}
+
+/* .icons{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+} */
+.hayabusa-button{
+    display: inline-block;
+    left: 30px;
+    position: fixed;
+    border: none;
+
+}
+.burger-btn{
+    border:none; 
+    display: inline-block;      
+         
+    height: 39px;    
+    margin-top: 0px;  
+    position: fixed;      
+    right: 30px;
+     top: 20px;
+    width: 39px; 
+    z-index: 5;  
+}  
+
+.bar{      
+    width: 40px;      
+    height: 2px;        
+    display: block;      
+    position: absolute;      
+    left: 50%;      
+    transform: translateX(-50%);      
+    background-color: #fff;    
+}  
+.bar_top{   
+    top: 10px;
+  }
+  .bar_mid{    
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .bar_bottom{
+    bottom: 10px;
+  }
+
+  .burger-btn.close .bar_top{      
+    transform: translate(-50%,10px) rotate(45deg);  
+    background-color: #003149;    
+    transition: .3s;  
+    
+  }    
+  .burger-btn.close .bar_mid{      
+    opacity: 0; 
+    transition: opacity .3s;    
+    
+  }    
+  .burger-btn.close .bar_bottom{      
+  transform: translate(-50%,-8px) rotate(-45deg); 
+  background-color: #003149;       
+  transition: .3s;    
+  }
+
 
 .content{
     background-color: #003149;
@@ -37,6 +174,7 @@ h2{
     letter-spacing: 1em;
     padding-top: 161px;
     text-align: center;
+    text-indent: 1em;
 }
 
 .contents{

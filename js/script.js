@@ -268,7 +268,7 @@ gsap.to(".light1",{
 gsap.to(".koushinFukkatsu",{
     autoAlpha:1,
     duration:3,
-    delay:2,
+    delay:.5,
     scrollTrigger:{
         trigger:".pol7",
         start:"bottom top",  
