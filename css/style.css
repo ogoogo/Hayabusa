@@ -576,21 +576,27 @@ svg{
     position: relative;
     z-index: 1;
 }
-
-.bodyImages img{
-    display: block;
+.body-hayabusa-1{
+    position: relative;
+    height: 210px;
+    width: 487px;
     margin: 0 auto;
-
+    
 }
+.body-hayabusa-2{
+    position: relative;
+    height: 237.7px;
+    width: 366px;
+    margin: 0 auto;
+}
+
+
 /* .caption{
     background-color: #fff;
     height: 350px;
     width: 350px;
 } */
 
-.hayabusa_body{
-    /* height: 210px; */
-}
 
 .buttons {
    line-height: 6em;
@@ -627,48 +633,48 @@ svg{
 
 .sampleLight{
     position: absolute;
-    left: 295px;
-    top: 580px;
+    left: 9.5%;
+    top: 40%;
     opacity: 0;
     z-index: 0;
 }
 
 .minervaLight{
     position: absolute;
-    left: 280px;
-    top: 548px;
+    left: 5%;
+    top: 27%;
     opacity: 0;
     z-index: 0;
 }
 
 .capsuleLight{
     position: absolute;
-    left: 285px;
-    top: 513px;
+    left: 7%;
+    top: 15%;
     opacity: 0;
     z-index: 0;
 }
 
 .ionLight{
     position: absolute;
-    left: 345px;
-    top: 335px;
+    left: 30%;
+    top: 30%;
     opacity: 0;
     z-index: 0;
 }
 
 .solarLight1{
     position: absolute;
-    left: 180px;
-    top: 255px;
+    left: -3%;
+    top: -10%;
     opacity: 0;
     z-index: 0;
 }
 
 .solarLight2{
     position: absolute;
-    left: 490px;
-    top: 255px;
+    left: 60%;
+    top: -10%;
     opacity: 0;
     z-index: 0;
 }
@@ -971,6 +977,14 @@ footer{
 
 
 
+    .body-hayabusa-1{
+        width: 183px;
+        height: 78px;
+    }
+    .body-hayabusa-2{
+        width: 120px;
+        height: 78px;
+    }
 
     .body-content{
         margin-left: 5px;
@@ -1008,6 +1022,8 @@ footer{
         font-size: 10px;
         line-height: 2em;
     }
+
+    
 
     /*last*/
 
