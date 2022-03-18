@@ -41,6 +41,10 @@ header{
     z-index: 999;
 }
 
+.hayabusa_button img{
+    width: 48px;
+}
+
 .nav-wrapper {
 	height: 100vh;
 	right: 0;
@@ -172,6 +176,7 @@ h2{
 /*title*/
 .title{
     background-color: #003149;
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -232,6 +237,7 @@ h1{
     /* #EAF5F5 */
     background :linear-gradient(#003149,#EAF5F5 25% 75%,#003149) ;
     height: 120vh;
+    width: 100vw;
     position: relative;
 }
 
@@ -251,6 +257,7 @@ h1{
     background-image: url(../images/bglong.png);
     background-size: cover;
     height: 7500px;
+    width: 100vw;
     position: relative;
 }
 
@@ -280,6 +287,9 @@ h1{
     font-size: 14px;
     line-height: 40px;
     margin-top: 24px;
+}
+.hidden{
+    display: none;
 }
 
 /*timeline文字設定*/
@@ -550,6 +560,7 @@ svg{
     position: relative;
  
     height: 1000px;
+    width: 100vw;
 }
 .hayabusa_body h2{
     margin-top: 82px;
@@ -611,6 +622,7 @@ svg{
 .caption{
     line-height: 2em;
     margin-left: 50px;
+    margin-right: 50px;
 }
 
 .sampleLight{
@@ -665,6 +677,7 @@ svg{
   
     background: linear-gradient(#003149, #EAF5F5 30%);
     height: 1000px;
+    width: 100vw;
 }
 .last p{
     color: #003149;
@@ -682,6 +695,7 @@ footer{
 
 @media screen and (max-width:480px){
 
+  
     .titleImage{
         width: 311px;
     }
@@ -700,38 +714,254 @@ footer{
     h2{
         font-size: 14px;
     }
+
+    /*タイムライン*/
+
+    .timeline{
+        width: 100vw;
+        height: 3900px;
+       
+    }
     .timeline h2{
         
         padding-top: 55px;
     }
 
+    .items{
+        left: 20px;
+    }
+
+    .date{
+        font-size: 11px;
+    }
+    .itemcaption{
+        margin-left: 10px;
+    }
+    .itemcaption h3{
+        font-size: 14px;
+    }
+    .itemcaption p{
+        font-size: 9px;
+        line-height: 2em;
+        margin-top: 10px;
+        
+    }
+    .hidden{
+        display: inline;
+    }
+
+    .uchiage{
+        top: 176px;
+    }
+    .itokawaTouchaku{
+        top: 383px;
+    }
+    .reactionWheelKoshou{
+        top: 657px;
+    }
+    .minerubaBunri{
+        top: 926px;
+    }
+    .koukaChallenge{
+        top: 1242px;
+    }
+    .koukaSeikou{
+        top: 1459px;
+    }
+    .tsuushinTodaeru{
+        top: 1805px;
+    }
+    .koushinFukkatsu{
+        top: 2408px;
+    }
+    .shinRouteKettei{
+        top: 2649px;
+    }
+    .ionEngineKoshou{
+        top: 2917px;
+    }
+    .chikyuuHeKikan{
+        top: 3415px;
+    }
+
     .pol1{
         width: 288px;
+        left: 0;
     }
+    .pol2{
+        width: 288px;
+        left: 0;
+    }
+
+    .pol3{
+        width: 288px;
+        left: 0;
+    }
+    .pol4{
+        width: 288px;
+        left: 0;
+    }
+    .pol5{
+        width: 288px;
+        left: 0;
+    }
+    .pol6{
+        width: 288px;
+        left: 0;
+    }
+    .pol7{
+        width: 288px;
+        left: 0;
+    }
+    .pol8{
+        width: 288px;
+        left: 0;
+    }
+    .pol9{
+        width: 288px;
+        left: 0;
+    }
+
+    .rocket{
+        width: 150px;
+        height: 184px;
+        left: 225px;
+        top: 153px;
+        object-fit: contain;
+        object-position: 0 100%;
+    }
+    .itokawa{
+        width: 136px;
+        left: 220px;
+        top: 369px;
+    }
+    .hayabusaTop{
+        width: 114px;
+        left: 237px;
+        top: 616px;
+        
+    }
+
+    .minerva{
+        width: 130px;
+        left: 209px;
+        top: 849px;
+    }
+
+    .landing{
+        width: 177px;
+        height: 188px;
+        left: 198px;
+        top: 1294px;
+        object-fit: contain;
+        object-position: 0 100%;
+    }
+    .ionEngine{
+        width: 119px;
+        left: 222px;
+        top: 2836px;
+        transform: rotate(12deg);
+    }
+
+    .parashuto{
+        width: 164px;
+        height: 212px;
+        left: 175px;
+        top: 3547px;
+        object-fit: cover;
+        object-position: 0 100%;
+        transform: rotate(21deg);
+    }
+
+    .column-button{
+        height: 45px;
+        width: 165px;
+        font-size: 9px;
+        line-height: 45px;
+    }
+    .button-itokawa{
+        top: 505px;
+    }
+    .button-sample{
+        top: 1653px;
+    }
+    .ion1{
+        width: 59px;
+        left: 241px;
+        top: 2851px;
+        transform: rotate(11.9deg);
+    }
+    .ion2{
+        width: 59px;
+        left: 273px;
+        top: 2860px;
+        transform: rotate(11.9deg);
+    }
+    .ion3{
+        width: 59px;
+        left: 233px;
+        top: 2880px;
+        transform: rotate(11.9deg);
+    }
+    .ion4{
+        width: 59px;
+        left: 267px;
+        top: 2887px;
+        transform: rotate(11.9deg);
+    }
+
+
+
 
     /*全体像*/
 
+    .hayabusaBody{
+        height: 800px;
+    }
+
+    .hayabusaBody h2{
+        padding-top: 50px;
+    }
+
+
+
+
+
     .body-content{
-        margin-left: 10px;
-        margin-right: 10px;
-        justify-content: space-between;
+        margin-left: 5px;
+        margin-right: 5px;
+        display: block;
+        margin-top: 50px;
 
     }
+
+
+    .bodyImages{
+        display: flex;
+    }
+   
     .hayabusa_body{
         width: 183px;
+        
     }
 
     .landing_body{
         width: 120px;
+        
     }
     
     .buttons{
-        font-size: 9px;
-        width: 150px;
+        font-size: 14px;
+        line-height: 4em;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 50px;
+        
     }
     .caption{
         margin-left: 20px;
-        font-size: 7px;
+        font-size: 10px;
+        line-height: 2em;
     }
 
     /*last*/
