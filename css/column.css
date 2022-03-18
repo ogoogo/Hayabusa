@@ -317,3 +317,93 @@ footer{
     line-height: 130px;
     text-align: center;
 }
+
+@media screen and (max-width:480px){
+
+    .content{
+        height: 1750px;
+    }
+
+    h2{
+        font-size: 14px;
+        padding-top: 50px;
+    }
+
+    .contents{
+        left: 10px;
+
+    }
+    
+    .texts h3{
+        
+        font-size: 14px;
+    }
+    .deco{
+        font-size: 10px;
+    }
+    .text{
+        font-size: 9px;
+        line-height: 30px;
+        margin-top: 30px;
+    }
+    .sampleReturn{
+        top: 294px;
+    }
+    .itokawa{
+        top: 685px;
+     
+    }
+    .hayabusa{
+        top: 1340px;
+    }
+
+    .rec1{
+        width: 335px;
+        height: 173px;
+        top: 273px;
+        right: initial;
+        left: 0;
+    }
+    .rec2{
+        width: 343px;
+        height: 389px;
+        top: 664px;
+    }
+    .rec3{
+        width: 333px;
+        height: 288px;
+        top: 1305px;
+        right: initial;
+        left: 0;
+    }
+    .sample_img{
+        width: 205px;
+        left: 157px;
+        top: 116px;
+    }
+    .itokawa_img{
+        width: 197px;
+        left: 136px;
+        top: 586px;
+    }
+    .hayabusa_img{
+        width: 179px;
+        left: 178px;
+        top: 1180px;
+    }
+
+    .back_button{
+        width: 165px;
+        height: 45px;
+        font-size: 9px;
+        font-weight: bold;
+        line-height: 45px;
+    }
+
+    footer{
+        font-size: 8px;
+        height: 40px;
+        line-height: 40px;
+    }
+    }
+}
