@@ -785,41 +785,75 @@ footer{
     }
 
     .pol1{
-        width: 288px;
+        width: 278px;
+        height: 140px;
         left: 0;
+        top: 143px;
     }
     .pol2{
+        transform: scale(-1, 1);
         width: 288px;
+        height: 150px;
         left: 0;
+        top: 357px;
     }
 
     .pol3{
-        width: 288px;
+        transform: scale(1, -1);
+        width: 370px;
+        height: 230px;
         left: 0;
+        top: 620px;
     }
     .pol4{
-        width: 288px;
+        width: 330px;
+        height: 220px;
+        object-fit: cover;
+        object-position: 100% 100%;
+        
         left: 0;
+        top: 900px;
     }
     .pol5{
-        width: 288px;
+        
+        width: 320px;
+        height: 190px;
         left: 0;
+        top: 1210px;
+        object-fit: cover;
+        object-position: 100% 100%;
     }
     .pol6{
-        width: 288px;
+        width: 350px;
+        height: 200px;
         left: 0;
+        top: 1431px;
+        object-fit: cover;
+        object-position: 100% 100%;
     }
     .pol7{
-        width: 288px;
-        left: 0;
+        
+        width: 420px;
+        height: 150px;
+        left: initial;
+        right:  10px;
+        top: 2617px;
     }
     .pol8{
-        width: 288px;
-        left: 0;
+        transform: scale(1, -1);
+        width: 400px;
+        height: 200px;
+        top: 1755px;
+        right: 20px;
+        left: initial;
     }
     .pol9{
-        width: 288px;
-        left: 0;
+        
+        width: 400px;
+        height: 180px;
+        left: initial;
+        right: 10px;
+        top: 2896px;
     }
 
     .rocket{
@@ -827,7 +861,7 @@ footer{
         height: 184px;
         left: 225px;
         top: 153px;
-        object-fit: contain;
+        object-fit: cover;
         object-position: 0 100%;
     }
     .itokawa{
