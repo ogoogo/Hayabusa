@@ -835,8 +835,8 @@ footer{
         
         width: 420px;
         height: 150px;
-        left: initial;
-        right:  10px;
+        left: -50px;
+        /* right:  10px; */
         top: 2617px;
     }
     .pol8{
@@ -844,15 +844,15 @@ footer{
         width: 400px;
         height: 200px;
         top: 1755px;
-        right: 20px;
-        left: initial;
+        /* right: 20px; */
+        left: -40px;
     }
     .pol9{
         
         width: 400px;
         height: 180px;
-        left: initial;
-        right: 10px;
+        left: -40px;
+        /* right: 10px; */
         top: 2896px;
     }
 
@@ -942,6 +942,17 @@ footer{
         left: 267px;
         top: 2887px;
         transform: rotate(11.9deg);
+    }
+
+    .light1{
+        width: 375px;
+        left: 0;
+        top: 2217px;
+    }
+    .light2{
+        width: 280px;
+        left: 44px;
+        top: 2938px;
     }
 
 
