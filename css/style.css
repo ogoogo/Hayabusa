@@ -230,8 +230,8 @@ h1{
 /*introduction*/
 .introduction{
     /* #EAF5F5 */
-    background :linear-gradient(#003149,#EAF5F5 33% 67%,#003149) ;
-    height: 160vh;
+    background :linear-gradient(#003149,#EAF5F5 25% 75%,#003149) ;
+    height: 120vh;
     position: relative;
 }
 
@@ -380,7 +380,7 @@ h1{
 }
 
 .parashuto{
-    left: 937px;
+    left: 900px;
     top: 6914px;
     transform: rotate(13deg);
 
@@ -447,6 +447,8 @@ h1{
 .pol5{
     right: 0;
     top: 2770px;
+    height: 400px;
+    width: 762px;
 }
 .pol6{
     left: 22px;
@@ -462,7 +464,7 @@ h1{
 }
 .pol9{
     left: 650px;
-    top: 6002px;
+    top: 6050px;
 }
 
 
@@ -560,6 +562,8 @@ svg{
     margin-top: 220px;
     margin-left: 100px;
     margin-right: 100px;
+    position: relative;
+    z-index: 1;
 }
 
 .bodyImages img{
@@ -614,6 +618,7 @@ svg{
     left: 295px;
     top: 580px;
     opacity: 0;
+    z-index: 0;
 }
 
 .minervaLight{
@@ -621,6 +626,7 @@ svg{
     left: 280px;
     top: 548px;
     opacity: 0;
+    z-index: 0;
 }
 
 .capsuleLight{
@@ -628,6 +634,7 @@ svg{
     left: 285px;
     top: 513px;
     opacity: 0;
+    z-index: 0;
 }
 
 .ionLight{
@@ -635,6 +642,7 @@ svg{
     left: 345px;
     top: 335px;
     opacity: 0;
+    z-index: 0;
 }
 
 .solarLight1{
@@ -642,6 +650,7 @@ svg{
     left: 180px;
     top: 255px;
     opacity: 0;
+    z-index: 0;
 }
 
 .solarLight2{
@@ -649,6 +658,7 @@ svg{
     left: 490px;
     top: 255px;
     opacity: 0;
+    z-index: 0;
 }
 
 .last{
@@ -668,4 +678,78 @@ footer{
     height: 90px;
     line-height: 90px;
     text-align: center;
+}
+
+@media screen and (max-width:480px){
+
+    .titleImage{
+        width: 311px;
+    }
+    h1{
+        font-size: 36px;
+        letter-spacing: 1em;
+        text-indent: 1em;
+    }
+
+    .introduction p{
+        font-size: 14px;
+        line-height: 80px;
+    }
+
+
+    h2{
+        font-size: 14px;
+    }
+    .timeline h2{
+        
+        padding-top: 55px;
+    }
+
+    .pol1{
+        width: 288px;
+    }
+
+    /*全体像*/
+
+    .body-content{
+        margin-left: 10px;
+        margin-right: 10px;
+        justify-content: space-between;
+
+    }
+    .hayabusa_body{
+        width: 183px;
+    }
+
+    .landing_body{
+        width: 120px;
+    }
+    
+    .buttons{
+        font-size: 9px;
+        width: 150px;
+    }
+    .caption{
+        margin-left: 20px;
+        font-size: 7px;
+    }
+
+    /*last*/
+
+    .last{
+        height: 100vh;
+    }
+
+    .last p{
+        font-size: 9px;
+        line-height: 40px;
+    }
+
+    footer{
+        font-size: 8px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+
 }
