@@ -961,6 +961,9 @@ footer{
         top: 2938px;
     }
 
+    svg{
+        display: none;
+    }
 
 
 
