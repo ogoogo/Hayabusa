@@ -443,7 +443,14 @@ h1{
     opacity: 0;
 }
 
+.kirakira1{
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    
 
+}
 
 /*timeline画像終わり*/
 
@@ -579,6 +586,13 @@ svg{
 }
 .hayabusa_body h2{
     margin-top: 82px;
+}
+.kirakira2{
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
 
 .body-content{
@@ -716,13 +730,13 @@ footer{
 
 @media screen and (max-width:480px){
 
-    /* .hayabusa_button img{
+    .hayabusa_button img{
         width: 48px;
         
-    } */
+    }
     .hayabusa_button{
         left: 10px;
-        top: 10px;
+        top: 5px;
     }
 
     .burger-btn{
@@ -766,6 +780,15 @@ footer{
     .timeline h2{
         
         padding-top: 55px;
+    }
+
+    .kirakira1{
+        position: absolute;
+        top: 35px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 300px;
+    
     }
 
     .items{
@@ -1023,6 +1046,14 @@ footer{
 
     .hayabusaBody h2{
         padding-top: 50px;
+    }
+    .kirakira2{
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 300px;
+    
     }
 
 
