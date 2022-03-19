@@ -85,7 +85,7 @@ const startY2 = pathBB2.top - innerHeight + offsetFromTop2;
 // const startY7 = pathBB7.top - innerHeight + offsetFromTop1;
 // const startY8 = pathBB8.top - innerHeight + offsetFromTop1;
 // const startY9 = pathBB9.top - innerHeight + offsetFromTop1;
-const finishDistance1 = pathBB1.height - offsetFromTop1;
+const finishDistance1 = pathBB1.height + offsetFromTop1;
 const finishDistance2 = pathBB2.height;
 // const finishDistance3 =pathBB3.height;
 // const finishDistance4 = pathBB4.height ;
@@ -99,7 +99,7 @@ const finishDistance2 = pathBB2.height;
 var tween1 = gsap.to("#haya1", {
   duration: 1, 
   paused: true,
-  ease: "none",
+  ease:CustomEase.create("custom", "M0,0,C0.056,0.02,0.044,0.124,0.128,0.124,0.204,0.124,0.217,0.3,0.3,0.3,0.398,0.3,0.315,0.48,0.418,0.48,0.506,0.48,0.524,0.604,0.61,0.604,0.68,0.604,0.618,0.7,0.69,0.7,0.777,0.7,0.813,0.876,0.9,0.876,0.966,0.876,0.93,0.97,1,1"),
   motionPath: {
     path: "#wholevec1",
     align: "#wholevec1",
@@ -111,7 +111,7 @@ var tween1 = gsap.to("#haya1", {
 var tween2 = gsap.to("#haya2", {
     duration: 5, 
     paused: true,
-    // ease: "none",
+    ease:CustomEase.create("custom", "M0,0,C0.242,0.01,0.286,0.415,0.474,0.422,0.762,0.432,0.767,1,1,1"),
     motionPath: {
       path: "#wholevec2",
       align: "#wholevec2",
