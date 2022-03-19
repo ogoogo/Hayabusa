@@ -665,7 +665,7 @@ svg{
     left: 9.5%;
     top: 40%;
     opacity: 0;
-    z-index: 0;
+    z-index: -1;
 }
 
 .minervaLight{
@@ -673,7 +673,7 @@ svg{
     left: 5%;
     top: 27%;
     opacity: 0;
-    z-index: 0;
+    z-index: -1;
 }
 
 .capsuleLight{
@@ -681,7 +681,7 @@ svg{
     left: 7%;
     top: 15%;
     opacity: 0;
-    z-index: 0;
+    z-index: -1;
 }
 
 .ionLight{
@@ -689,7 +689,7 @@ svg{
     left: 30%;
     top: 30%;
     opacity: 0;
-    z-index: 0;
+    z-index: -1;
 }
 
 .solarLight1{
@@ -697,7 +697,7 @@ svg{
     left: -3%;
     top: -10%;
     opacity: 0;
-    z-index: 0;
+    z-index: -1;
 }
 
 .solarLight2{
@@ -705,7 +705,7 @@ svg{
     left: 60%;
     top: -10%;
     opacity: 0;
-    z-index: 0;
+    z-index: -1;
 }
 
 .last{

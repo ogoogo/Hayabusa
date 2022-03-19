@@ -379,6 +379,21 @@ footer{
     .deco{
         font-size: 10px;
     }
+
+    .sampleReturn .deco{
+        margin-left: 80px;
+        margin-top: -5px;
+
+    }
+    .itokawa .deco{
+        margin-left: 35px;
+        margin-top: -5px;
+    }
+
+    .hayabusa .deco{
+        margin-left: 70px;
+        margin-top: -3px;
+    }
     .text{
         font-size: 9px;
         line-height: 30px;

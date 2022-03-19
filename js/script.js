@@ -92,6 +92,18 @@ if (window.matchMedia('(max-width: 480px)').matches) {
             start:"top 75%",
             end:"bottom top",
             
+            scrub:true,
+           
+        }
+    });
+
+    gsap.to(".landing",{
+        y:20,
+        scrollTrigger:{
+            trigger:".pol5",
+            start:"top 50%",
+            end:"bottom top",
+            
             scrub:true
             
         }
@@ -297,6 +309,18 @@ if (window.matchMedia('(max-width: 480px)').matches) {
             trigger:".pol4",
             start:"top 75%",
             end:"bottom top",
+            
+            scrub:true
+            
+        }
+    });
+    gsap.to(".landing",{
+        y:50,
+        scrollTrigger:{
+            trigger:".pol5",
+            start:"top 50%",
+            end:"bottom top",
+         
             
             scrub:true
             
