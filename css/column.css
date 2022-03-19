@@ -431,6 +431,7 @@ footer{
     }
 
     .back_button{
+        bottom: 30px;
         width: 165px;
         height: 45px;
         font-size: 9px;
