@@ -9,7 +9,62 @@ gsap.registerPlugin(ScrollTrigger);
 //     }
 // });
 
-// The start and end positions in terms of the page scroll
+if (window.matchMedia('(max-width: 480px)').matches) {
+    //スマホ処理
+    gsap.to(".light1",{
+        autoAlpha:1,
+        duration:3,
+        scrollTrigger:{
+            trigger:".pol8",
+            start:"bottom top",  
+        }
+    });
+    
+    gsap.to(".koushinFukkatsu",{
+        autoAlpha:1,
+        duration:3,
+        delay:.5,
+        scrollTrigger:{
+            trigger:".pol8",
+            start:"bottom top",  
+        }
+    });
+    gsap.to(".light2",{
+        y:320,
+        duration:5,
+        
+        scrollTrigger:{
+            trigger:".light2",
+            start:"center 25%",  
+        }
+    });
+    gsap.to("#haya1",{
+        y:1630,
+        ease:"none",
+        
+        
+        scrollTrigger:{
+            trigger:"#haya1",
+            start:"top center",  
+            end:"+=1630",
+            scrub:true
+        }
+    });
+    gsap.to("#haya2",{
+        y:510,
+        ease:"none",
+        
+        
+        scrollTrigger:{
+            trigger:"#haya2",
+            start:"top center",  
+            end:"+=510",
+            scrub:true
+        }
+    });
+} else if (window.matchMedia('(min-width:480px)').matches) {
+    //PC処理
+    // The start and end positions in terms of the page scroll
 const offsetFromTop1 = innerHeight * 0.25;
 const offsetFromTop2 = innerHeight * 0.5;
 const pathBB1 = document.querySelector("#wholevec1").getBoundingClientRect();
@@ -175,37 +230,7 @@ function update() {
   requestId = null;
 }
 
-gsap.to('.ion1', { 
-    autoAlpha: 1, //opacity: 1;とvisibility：visible;がつく
-    scrollTrigger: {
-      trigger: '.ion1',
-      start: 'top center'
-    }
-  });
 
-  gsap.to('.ion2', { 
-    autoAlpha: 1, //opacity: 1;とvisibility：visible;がつく
-    scrollTrigger: {
-      trigger: '.ion2',
-      start: 'top center'
-    }
-  });
-
-  gsap.to('.ion3', { 
-    autoAlpha: 1, //opacity: 1;とvisibility：visible;がつく
-    scrollTrigger: {
-      trigger: '.ion3',
-      start: 'top center'
-    }
-  });
-
-  gsap.to('.ion4', { 
-    autoAlpha: 1, //opacity: 1;とvisibility：visible;がつく
-    scrollTrigger: {
-      trigger: '.ion4',
-      start: 'top center'
-    }
-  });
 
   gsap.to(".hayabusaTop",{
       rotation:360,
@@ -283,6 +308,40 @@ gsap.to(".light2",{
         start:"center 25%",  
     }
 });
+
+}
+
+gsap.to('.ion1', { 
+    autoAlpha: 1, //opacity: 1;とvisibility：visible;がつく
+    scrollTrigger: {
+      trigger: '.ion1',
+      start: 'top center'
+    }
+  });
+
+  gsap.to('.ion2', { 
+    autoAlpha: 1, //opacity: 1;とvisibility：visible;がつく
+    scrollTrigger: {
+      trigger: '.ion2',
+      start: 'top center'
+    }
+  });
+
+  gsap.to('.ion3', { 
+    autoAlpha: 1, //opacity: 1;とvisibility：visible;がつく
+    scrollTrigger: {
+      trigger: '.ion3',
+      start: 'top center'
+    }
+  });
+
+  gsap.to('.ion4', { 
+    autoAlpha: 1, //opacity: 1;とvisibility：visible;がつく
+    scrollTrigger: {
+      trigger: '.ion4',
+      start: 'top center'
+    }
+  });
 
 
 //   var rellax = new Rellax('.rellax',{
@@ -397,6 +456,12 @@ $(function () {
         $('.nav-wrapper').toggleClass('slide-in'); // 書き換え
         $('body').toggleClass('noscroll');
       });
+
+    $(".hamButton").on("click",function(){
+        $('.burger-btn').removeClass('close');
+        $('.nav-wrapper').removeClass('slide-in'); // 書き換え
+        $('body').removeClass('noscroll');
+    });
   });
 
 particlesJS("particles-js", {"particles":{"number":{"value":459,"density":{"enable":true,"value_area":710.2328774690454}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":1,"random":true,"anim":{"enable":true,"speed":0.3996003996003996,"opacity_min":0,"sync":false}},"size":{"value":2,"random":true,"anim":{"enable":true,"speed":9.74437262480918,"size_min":1.6240621041348633,"sync":false}},"line_linked":{"enable":false,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":1,"direction":"none","random":true,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":721.5354273894853,"rotateY":600}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"bubble"},"onclick":{"enable":true,"mode":"repulse"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":200,"size":0,"duration":1.380452788514634,"opacity":0.032481242082697266,"speed":3},"repulse":{"distance":211.12807353753223,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;

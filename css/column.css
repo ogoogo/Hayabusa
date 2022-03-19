@@ -321,6 +321,13 @@ footer{
 
 @media screen and (max-width:480px){
 
+    .nav-wrapper{
+        width: 100vw;
+    }
+    .nav-list a{
+        font-size: 12px;
+    }
+
     .content{
         height: 1750px;
     }

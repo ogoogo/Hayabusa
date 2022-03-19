@@ -713,6 +713,12 @@ footer{
 @media screen and (max-width:480px){
 
   
+    .nav-wrapper{
+        width: 100vw;
+    }
+    .nav-list a{
+        font-size: 12px;
+    }
     .titleImage{
         width: 311px;
     }
@@ -974,6 +980,19 @@ footer{
 
     svg{
         display: none;
+    }
+
+    .movingHayabusa{
+        transform: rotate(90deg);
+        width: 20px;
+        
+        left: 5px;
+    }
+    #hata1{
+        top: 176px;
+    }
+    #haya2{
+        top: 2408px;
     }
 
 
